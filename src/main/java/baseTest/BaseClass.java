@@ -38,6 +38,8 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.bewakoof.com/");
+		
+		// why it is not working with thewebdrivermananger
 
 	}
 
