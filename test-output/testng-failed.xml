@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="homepageflip.Itemorder">
+      <class name="Testclas.loginTest">
         <methods>
-          <include name="cashondelivery"/>
-          <include name="additemtocart"/>
-          <include name="base"/>
           <include name="login"/>
+          <include name="base"/>
           <include name="teardown"/>
-          <include name="addtocarttest"/>
-          <include name="searchitem"/>
         </methods>
-      </class> <!-- homepageflip.Itemorder -->
+      </class> <!-- Testclas.loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
