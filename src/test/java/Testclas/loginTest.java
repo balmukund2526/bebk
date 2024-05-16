@@ -14,8 +14,10 @@ public class loginTest extends BaseClass {
 		Thread.sleep(5000);
 		lp.popupclickbtn();
 		lp.loginbuttonclick();
-		
-		
+		lp.loginbyemail();
+		lp.enteremail();
+		lp.enterpass();
+		lp.submitbtnclick();
 	}
 	
 		

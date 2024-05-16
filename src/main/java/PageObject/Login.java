@@ -74,8 +74,20 @@ public class Login extends BaseClass {
 		   
 	   }
 	   
+	   public void enteremail() {
+		   
+		   emailenter.sendKeys("balmukundsahu2706@gmail.com");
+	   }
 	   
+	   public void enterpass() {
+		   pasword.sendKeys("Apple@123#");
+		   
+	   }
 		
+	   public void submitbtnclick() {
+		   
+		   submitbtn.click();
+	   }
 		
 //		By popcancelbtn = By.xpath("//button[@id='wzrk-cancel']");
 //		By loginbutton = By.xpath();

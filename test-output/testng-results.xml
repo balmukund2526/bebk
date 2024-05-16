@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T22:34:22 IST" name="Default suite" finished-at="2024-05-15T22:34:37 IST" duration-ms="15092">
+  <suite started-at="2024-05-16T10:49:19 IST" name="Default suite" finished-at="2024-05-16T10:49:42 IST" duration-ms="22243">
     <groups>
     </groups>
-    <test started-at="2024-05-15T22:34:22 IST" name="Default test" finished-at="2024-05-15T22:34:37 IST" duration-ms="15092">
+    <test started-at="2024-05-16T10:49:19 IST" name="Default test" finished-at="2024-05-16T10:49:42 IST" duration-ms="22243">
       <class name="Testclas.loginTest">
-        <test-method is-config="true" signature="base()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-15T22:34:22 IST" name="base" finished-at="2024-05-15T22:34:31 IST" duration-ms="8607" status="PASS">
+        <test-method is-config="true" signature="base()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-16T10:49:19 IST" name="base" finished-at="2024-05-16T10:49:33 IST" duration-ms="13844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- base -->
-        <test-method signature="login()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-15T22:34:31 IST" name="login" finished-at="2024-05-15T22:34:36 IST" duration-ms="5509" status="PASS">
+        <test-method signature="login()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-16T10:49:33 IST" name="login" finished-at="2024-05-16T10:49:40 IST" duration-ms="7050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-15T22:34:36 IST" name="teardown" finished-at="2024-05-15T22:34:37 IST" duration-ms="916" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testclas.loginTest@6a6afff2]" started-at="2024-05-16T10:49:40 IST" name="teardown" finished-at="2024-05-16T10:49:42 IST" duration-ms="1275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
