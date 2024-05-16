@@ -14,7 +14,7 @@ import PageObject.HomePage;
 import PageObject.Login;
 import baseTest.BaseClass;
 
-public class Itemorder extends BaseClass {
+public class HomePage extends BaseClass {
 
 	Login lp = new Login();
 
@@ -23,7 +23,7 @@ public class Itemorder extends BaseClass {
 	AddToCart ac = new AddToCart();
 
 	@Test(priority = 1)
-	public void login() {
+	public void loginbtn() {
 		lp.login();
 
 		String pricr = "inseertes";

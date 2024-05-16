@@ -15,96 +15,93 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import ActionClass.methodsf;
 import baseTest.BaseClass;
 
-public class Login extends BaseClass {
+public class Login {
+	
+	methodsf mf= new methodsf();
+	WebDriver driver;
 
-		
-		
-		
-		@FindBy (xpath ="//button[@id='wzrk-cancel']")
-		WebElement popcancelbtn;
-		
-		@FindBy (xpath ="//a[@class='loginLink']")
-		WebElement loginbutton;
-		
-		@FindBy (xpath ="//button[@id='web_email_login']")
-		WebElement loginbyemail;
-		
-	   @FindBy (xpath ="//input[@id='email_input']")
-		WebElement emailenter;
+	@FindBy(xpath = "//button[@id='wzrk-cancel']")
+	WebElement popcancelbtn;
 
-	   @FindBy (xpath ="//input[@id='mob_password']")
-	  	WebElement pasword;
-	   
-	   @FindBy (id ="mob_login_password_submit")
-	 	WebElement submitbtn;
-	   
-	   @FindBy (xpath = "//button[@id='wzrk-cancel']")
-	   
-	   WebElement cancelpoptwo;
-	   
-	   @FindBy (xpath ="//i[contains(@class,'icon_user')]")
-	   
-	   WebElement accounticon;
-	   
-	   @FindBy (xpath ="//header[contains(@class,'')]//li[1]")
-	   WebElement usernametext;
+	@FindBy(xpath = "//a[@class='loginLink']")
+	WebElement loginbutton;
 
-	   public Login(WebDriver driver) {
-			this.driver = driver;
-			System.out.println(driver);
-			PageFactory.initElements(driver, this);   
-		}
-	   
-	 
-	   public void popupclickbtn() {
-		   
-		   popcancelbtn.click();
-	   }
-	   
-	   
-	  public void loginbuttonclick() {
-		   
-		  loginbutton.click();
-	   }
-	   
-	   public void loginbyemail() {
-		   loginbyemail.click();
-		   
-	   }
-	   
-	   public void enteremail() {
-		   
-		   emailenter.sendKeys("balmukundsahu2706@gmail.com");
-	   }
-	   
-	   public void enterpass() {
-		   pasword.sendKeys("Apple@123#");
-		   
-	   }
-		
-	   public void submitbtnclick() {
-		   
-		   submitbtn.click();
-	   }
-		
+	@FindBy(xpath = "//button[@id='web_email_login']")
+	WebElement loginbyemail;
+
+	@FindBy(xpath = "//input[@id='email_input']")
+	WebElement emailenter;
+
+	@FindBy(xpath = "//input[@id='mob_password']")
+	WebElement pasword;
+
+	@FindBy(id = "mob_login_password_submit")
+	WebElement submitbtn;
+
+	@FindBy(xpath = "//button[@id='wzrk-cancel']")
+
+	WebElement cancelpoptwo;
+
+	@FindBy(xpath = "//i[contains(@class,'icon_user')]")
+
+	WebElement accounticon;
+
+	@FindBy(xpath = "//header[contains(@class,'')]//li[1]")
+	WebElement usernametext;
+
+	public Login(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	public void popupclickbtn() {
+
+		popcancelbtn.click();
+	}
+
+	public void loginbuttonclick() {
+
+		loginbutton.click();
+	}
+
+	public void loginbyemail() {
+		loginbyemail.click();
+
+	}
+
+	public void enteremail() {
+
+		//emailenter.sendKeys("balmukundsahu2706@gmail.com");
+		mf.typeBySendkeys("balmukundsahu2706@gmail.com", emailenter);
+
+	}
+
+	public void enterpass() {
+		pasword.sendKeys("Apple@123#");
+		mf.typeBySendkeys(null, cancelpoptwo);
+
+	}
+
+	public void submitbtnclick() {
+
+		submitbtn.click();
+	}
+
 //		By popcancelbtn = By.xpath("//button[@id='wzrk-cancel']");
 //		By loginbutton = By.xpath();
-		//By loginbyemail = By.xpath();
+	// By loginbyemail = By.xpath();
 
-		//By emailenter = By.xpath("");
-		//By pasword = By.xpath("//input[@id='mob_password']");
+	// By emailenter = By.xpath("");
+	// By pasword = By.xpath("//input[@id='mob_password']");
 
 //		By submitbtn = By.id("mob_login_password_submit");
-		//By cancelpoptwo = By.xpath("");
+	// By cancelpoptwo = By.xpath("");
 
-		//By accounticon = By.xpath("//i[contains(@class,'icon_user')]");
-		//By usernametext = By.xpath("//header[contains(@class,'')]//li[1]");
-		
-		
-		
-		
+	// By accounticon = By.xpath("//i[contains(@class,'icon_user')]");
+	// By usernametext = By.xpath("//header[contains(@class,'')]//li[1]");
 
 //		public void login() {
 //			driver.findElement(popcancelbtn).click();
