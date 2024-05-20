@@ -32,7 +32,7 @@ public class BaseClass {
 		spark.config().setDocumentTitle("bebkoof.com");
 		extent.attachReporter(spark);
 
-	//	WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

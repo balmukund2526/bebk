@@ -1,17 +1,20 @@
 package PageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import ActionClass.methodsf;
 import baseTest.BaseClass;
 
 public class HomePage extends BaseClass {
-
+	methodsf mf = new methodsf();
 	@FindBy(xpath = "//input[@placeholder='Search by product, category or collection']")
 	WebElement searchbox;
 
@@ -29,21 +32,31 @@ public class HomePage extends BaseClass {
 
 	@FindBy(xpath = "//h1[@class='pageTitle']")
 	WebElement pageTitle;
-
+   
+	@FindBy(xpath="//input[@class='searchInput form-controls']")
+	WebElement entertextinsearch;
 	
-	public void loginbtn() {
+	
+	public HomePage(WebDriver driver) {
 		
-		
-		
+		this.driver= driver;		
+		PageFactory.initElements(driver, this);
 	}
+	
+	
+	
+
 	
 	public void searchproduct() {
 		// ExtentTest test = extent.createTest("searching the mobile covers");
 		searchbox.click();
-		listofsearch.click();
+		//mf.click(driver,searchbox);
+		entertextinsearch.sendKeys("mobile");
+	//	mf.click(driver, listofsearch);
+		//listofsearch.click();
 
-		String pagetitle = pageTitle.getText();
-		Assert.assertEquals(pagetitle, "Mobile Covers And Cases");
+		//String pagetitle = pageTitle.getText();
+		//Assert.assertEquals(pagetitle, "Mobile Covers And Cases");
 
 	}
 

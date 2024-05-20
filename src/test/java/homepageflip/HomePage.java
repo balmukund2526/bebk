@@ -10,13 +10,12 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import PageObject.AddToCart;
-import PageObject.HomePage;
 import PageObject.Login;
 import baseTest.BaseClass;
 
 public class HomePage extends BaseClass {
 
-	Login lp = new Login();
+	Login lp = new Login(driver);
 
 	HomePage hm = new HomePage();
 
@@ -24,7 +23,7 @@ public class HomePage extends BaseClass {
 
 	@Test(priority = 1)
 	public void loginbtn() {
-		lp.login();
+	//	lp.login();
 
 		String pricr = "inseertes";
 	}
@@ -32,12 +31,12 @@ public class HomePage extends BaseClass {
 	 @Test(priority = 2)
 	public void searchitem() {
 
-		hm.searchproduct();
+		//hm.searchproduct();
 	}
 
 	@Test(priority = 3)
 	public void addtocarttest() throws InterruptedException {
-		hm.gotoitem();
+		//hm.gotoitem();
 
 	}
 

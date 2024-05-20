@@ -19,8 +19,8 @@ import ActionClass.methodsf;
 import baseTest.BaseClass;
 
 public class Login {
-	
-	methodsf mf= new methodsf();
+
+	methodsf mf = new methodsf();
 	WebDriver driver;
 
 	@FindBy(xpath = "//button[@id='wzrk-cancel']")
@@ -74,14 +74,14 @@ public class Login {
 
 	public void enteremail() {
 
-		//emailenter.sendKeys("balmukundsahu2706@gmail.com");
-		mf.typeBySendkeys("balmukundsahu2706@gmail.com", emailenter);
+		 emailenter.sendKeys("balmukundsahu2706@gmail.com");
+		//mf.typeBySendkeys("balmukundsahu2706@gmail.com", emailenter);
 
 	}
 
 	public void enterpass() {
 		pasword.sendKeys("Apple@123#");
-		mf.typeBySendkeys(null, cancelpoptwo);
+		//cancelpoptwo.click();
 
 	}
 
